@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -16,14 +17,20 @@
     <body>
 
 
-      <div id="calculator">
-            <div id="screen">0</div>
+      <h1>My Super Calculator</h1>
+      <img src="img/licorne.gif" alt="licorne">
 
-            <table>
+          <section>
+                <tr>
+  								<td>
+  								<input type="text" value="0">
+  								</td>
+                </tr>
+        <div id="calculator">
+          <table>
                 <tr>
                     <td><button type="button" id="reset">CE</button></td>
-                    <td><button type="button" id="return">←</button></td>
-                    <td><button type="button" class="operator">%</button></td>
+                    <td colspan="2"><button type="button" id="return" style="width:100%;">←</button></td>
                     <td><button type="button" class="operator">+</button></td>
                 </tr>
 
@@ -49,17 +56,16 @@
                 </tr>
 
                 <tr>
-                    <td><button type="button" class="numeral">0</button></td>
-                    <td><button type="button" class="operator">±</button></td>
-                    <td><button type="button" class="numeral">,</button></td>
+                    <td colspan="2"><button type="button" class="numeral" style="width:100%;">0</button></td>
+                    <td><button type="button " class="numeral">,</button></td>
                     <td><button type="button" id="result">=</button></td>
                 </tr>
             </table>
 
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      </section>
+
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
