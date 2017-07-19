@@ -86,11 +86,11 @@ img {
   }
 
 th {
- !important;
   margin: auto;
   justify-content: center;
   height: 80px;
   background-color: rgba(218, 60, 244, 0.7);
+  text-align: right;
 }
 
 
