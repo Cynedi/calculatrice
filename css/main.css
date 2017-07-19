@@ -71,8 +71,10 @@ img {
  			font-size: 25px;
       border-collapse: collapse;
 
+    }
 
-
+    button:hover {
+      background-color: rgba(218, 60, 244, 0.7);
     }
 table {
 
@@ -86,11 +88,12 @@ table {
 
 }
 
-input {
-  display: flex;
+th {
+  border: 1px solid red!important;
+  /*display: flex;*/
   margin: auto;
   justify-content: center;
-  width: 300px;
+  /*width: 300px;*/
   height: 100px;
 }
 
