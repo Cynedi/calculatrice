@@ -21,46 +21,46 @@
       <img src="img/licorne.gif" alt="licorne">
 
           <section>
-        <div id="calculator">
+            <form id="calculator"  name="calculatrice" action="" onSubmit="resultat();return false;">
+
           <table>
                 <tr>
-                  <th colspan="4">0  </th>
+                  <th colspan="4" class="affiche"></th>
                 </tr>
                 <tr>
-                    <td><button type="button" id="reset">CE</button></td>
-                    <td colspan="2"><button type="button" id="return" style="width:100%;">←</button></td>
-                    <td><button type="button" class="operator">+</button></td>
-                </tr>
-
-                <tr>
-                    <td><button type="button" class="numeral">7</button></td>
-                    <td><button type="button" class="numeral">8</button></td>
-                    <td><button type="button" class="numeral">9</button></td>
-                    <td><button type="button" class="operator">-</button></td>
+                    <td colspan="3"><button type="button" id="reset" value="" style="width:100%;">Delete</button></td>
+                    <td><button type="button" class="operator" value="+">+</button></td>
                 </tr>
 
                 <tr>
-                    <td><button type="button" class="numeral">4</button></td>
-                    <td><button type="button" class="numeral">5</button></td>
-                    <td><button type="button" class="numeral">6</button></td>
-                    <td><button type="button" class="operator">*</button></td>
+                    <td><button type="button" class="numeral" value="7">7</button></td>
+                    <td><button type="button" class="numeral" value="8">8</button></td>
+                    <td><button type="button" class="numeral" value="9">9</button></td>
+                    <td><button type="button" class="operator" value="-">-</button></td>
                 </tr>
 
                 <tr>
-                    <td><button type="button" class="numeral">1</button></td>
-                    <td><button type="button" class="numeral">2</button></td>
-                    <td><button type="button" class="numeral">3</button></td>
-                    <td><button type="button" class="operator">÷</button></td>
+                    <td><button type="button" class="numeral" value="4">4</button></td>
+                    <td><button type="button" class="numeral" value="5">5</button></td>
+                    <td><button type="button" class="numeral" value="6">6</button></td>
+                    <td><button type="button" class="operator" value="*">*</button></td>
                 </tr>
 
                 <tr>
-                    <td colspan="2"><button type="button" class="numeral" style="width:100%;">0</button></td>
-                    <td><button type="button " class="numeral">,</button></td>
-                    <td><button type="button" id="result">=</button></td>
+                    <td><button type="button" class="numeral" value="1">1</button></td>
+                    <td><button type="button" class="numeral" value="2">2</button></td>
+                    <td><button type="button" class="numeral" value="3">3</button></td>
+                    <td><button type="button" class="operator" value="/">/</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button type="button" class="numeral" style="width:100%;" value="0">0</button></td>
+                    <td><button type="button " class="numeral" value=".">,</button></td>
+                    <td><button type="button" class="operator" value="result">=</button></td>
                 </tr>
             </table>
 
-        </div>
+        </form>
 
       </section>
 
