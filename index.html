@@ -21,14 +21,16 @@
       <img src="img/licorne.gif" alt="licorne">
 
           <section>
-            <form id="calculator"  name="calculatrice" action="" onSubmit="resultat();return false;">
+            <div id="calculator"  name="calculatrice">
 
           <table>
+            <form>
                 <tr>
-                  <th colspan="4" class="affiche"></th>
+                  <th colspan="4" class="affiche"><input type="text" id="display"></th>
                 </tr>
                 <tr>
-                    <td colspan="3"><button type="button" id="reset" value="" style="width:100%;">Delete</button></td>
+                    <td colspan="3"><button type="reset" id="reset" style="width:100%;">Delete</button></td>
+            </form>
                     <td><button type="button" class="operator" value="+">+</button></td>
                 </tr>
 
@@ -55,12 +57,12 @@
 
                 <tr>
                     <td colspan="2"><button type="button" class="numeral" style="width:100%;" value="0">0</button></td>
-                    <td><button type="button " class="numeral" value=".">,</button></td>
-                    <td><button type="button" class="operator" value="result">=</button></td>
+                    <td><button type="button " class="numeral" value=".">.</button></td>
+                    <td><button onclick="result()" type="button" class="operator" id="resultat">=</button></td>
                 </tr>
             </table>
 
-        </form>
+        </div>
 
       </section>
 
