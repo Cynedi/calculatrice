@@ -7,7 +7,7 @@ var clear=document.getElementById('reset');
 var res=document.getElementById('resultat');
 var display=document.getElementById('display');
 
-console.log(ecran.value);
+
 //On crée une boucle qui parcoure le tableau des chiffres//
 for (let i = 0; i < numbers.length; i++) {
 
@@ -29,9 +29,8 @@ for (let j = 0; j < operande.length; j++) {
 });
 }
 
-function result() {//calcul le contenu actuel//
- //variable ou le resultat est sauvegardé//
-   display.value = eval (display.value);//l'opération de calcul transmise à eval qui calcul automatiquement//
-   //affecté au champs de formulaire pour etre affiché//
+//on crée une fonction qui va calculer le contenu actuel de l'input//
+function result() {
+   display.value = eval (display.value);//On recupère la valeur de l'input et on la transmet à eval qui calcul automatiquement//
 
  }
